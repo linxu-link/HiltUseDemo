@@ -5,8 +5,10 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import com.hilt.demo.abs.AbsActivity
+import com.hilt.demo.multi.MultiActivity
 import com.hilt.demo.normal.NormalActivity
 import com.hilt.demo.provider.ProviderActivity
+import com.hilt.demo.scope.ScopeActivity
 import com.hilt.demo.viewmodel.ViewModelActivity
 
 class MainActivity : AppCompatActivity() {
@@ -30,7 +32,17 @@ class MainActivity : AppCompatActivity() {
         }
 
         findViewById<Button>(R.id.btn_4).setOnClickListener {
+            val intent = Intent(this, MultiActivity::class.java)
+            startActivity(intent)
+        }
+
+        findViewById<Button>(R.id.btn_5).setOnClickListener {
             val intent = Intent(this, ViewModelActivity::class.java)
+            startActivity(intent)
+        }
+
+        findViewById<Button>(R.id.btn_6).setOnClickListener {
+            val intent = Intent(this, ScopeActivity::class.java)
             startActivity(intent)
         }
     }

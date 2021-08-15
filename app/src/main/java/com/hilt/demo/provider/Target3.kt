@@ -8,9 +8,7 @@ class Target3 private constructor() {
         println(this.javaClass.simpleName + ":" + string)
     }
 
-
     class Builder {
-
         private val target = Target3();
 
         fun setStr(string: String): Builder {
@@ -21,7 +19,5 @@ class Target3 private constructor() {
         fun build(): Target3 {
             return target
         }
-
     }
-
 }

@@ -11,6 +11,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HiltUseDemo">
         <activity
+            android:name=".scope.ScopeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".multi.MultiActivity"
+            android:exported="true" />
+        <activity
             android:name=".abs.AbsActivity"
             android:exported="true" />
         <activity

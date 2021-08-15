@@ -13,5 +13,4 @@ class Target2 constructor(
         println(this.javaClass.simpleName + "\n" + context + "\n" + activity + "\n")
         target.print()
     }
-
 }

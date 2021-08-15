@@ -7,5 +7,4 @@ class SimpleRepository @Inject constructor() {
     fun getData() {
         println("getData")
     }
-
 }

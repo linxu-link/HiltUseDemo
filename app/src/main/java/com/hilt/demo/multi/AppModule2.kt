@@ -1,4 +1,4 @@
-package com.hilt.demo.abs
+package com.hilt.demo.multi
 
 import dagger.Module
 import dagger.Provides
@@ -9,13 +9,15 @@ import dagger.hilt.android.components.ActivityComponent
 @Module
 object AppModule2 {
 
+    @TargetType1
     @Provides
-    fun providerISimpleImpl(): ISimpleImpl {
-        return ISimpleImpl()
+    fun providerTarget4Type1(): Target4 {
+        return Target4();
     }
 
+    @TargetType2
     @Provides
-    fun providerAbsSimpleImpl(): AbsSimpleImpl {
-        return AbsSimpleImpl()
+    fun providerTarget4Type2(): Target4 {
+        return Target4();
     }
 }
